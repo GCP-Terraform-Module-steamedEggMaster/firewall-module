@@ -32,28 +32,28 @@ variable "destination_ranges" {
   default     = []
 }
 
-variable "source_ranges" {
-  description = "소스 IP 범위 (CIDR 형식)"
-  type        = list(string)
-  default     = []
-}
-
 variable "source_tags" {
   description = "소스 태그 목록"
   type        = list(string)
-  default     = []
+  default     = null
 }
 
 variable "source_service_accounts" {
   description = "소스 서비스 계정 목록"
   type        = list(string)
-  default     = []
+  default     = null
 }
 
 variable "target_tags" {
   description = "대상 태그 목록"
   type        = list(string)
-  default     = []
+  default     = null
+}
+
+variable "target_service_accounts" {
+  description = "대상 서비스 계정 목록"
+  type        = list(string)
+  default     = null
 }
 
 variable "target_service_accounts" {
