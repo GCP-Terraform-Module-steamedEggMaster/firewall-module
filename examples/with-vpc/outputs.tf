@@ -5,8 +5,6 @@ output "vpc_and_firewall_details" {
       id        = module.vpc.id        # VPC 리소스 ID
       self_link = module.vpc.self_link # VPC URI
       name      = module.vpc.name      # VPC 이름
-      region    = module.vpc.region    # VPC 리전
-      subnets   = module.vpc.subnets   # VPC 서브넷 목록
     }
     firewall = {
       id                 = module.firewall.id                 # 방화벽 리소스 ID

@@ -89,7 +89,7 @@ output "allow" {
 }
 
 # 방화벽 DENY 규칙 설정
-output "firewall_deny" {
+output "deny" {
   description = "방화벽 리소스의 DENY 규칙 목록"
   value       = google_compute_firewall.firewall_rule.deny
 }
