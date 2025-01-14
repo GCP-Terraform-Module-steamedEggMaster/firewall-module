@@ -56,12 +56,6 @@ variable "target_service_accounts" {
   default     = null
 }
 
-variable "target_service_accounts" {
-  description = "대상 서비스 계정 목록"
-  type        = list(string)
-  default     = []
-}
-
 variable "disabled" {
   description = "방화벽 비활성화 여부"
   type        = bool
