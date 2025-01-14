@@ -72,7 +72,8 @@ GCP Terraform Firewall Module Repo
 
 ```hcl
 module "firewall" {
-  source      = "./firewall-module"
+  source = "git::https://github.com/GCP-Terraform-Module-steamedEggMaster/firewall-module.git?ref=v1.0.0"
+  
   name        = "allow-ssh"
   network     = "projects/my-project/global/networks/my-vpc"
   direction   = "INGRESS"
