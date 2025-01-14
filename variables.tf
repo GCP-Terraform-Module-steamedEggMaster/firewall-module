@@ -32,6 +32,12 @@ variable "destination_ranges" {
   default     = []
 }
 
+variable "source_ranges" {
+  description = "소스 IP 범위 (CIDR 형식)"
+  type        = list(string)
+  default     = []
+}
+
 variable "source_tags" {
   description = "소스 태그 목록"
   type        = list(string)
