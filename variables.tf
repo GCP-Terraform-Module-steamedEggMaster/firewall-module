@@ -72,7 +72,7 @@ variable "allow" {
   description = "ALLOW 규칙 목록"
   type = list(object({
     protocol = string
-    ports    = list(string)
+    ports    = optional(list(string), [])
   }))
   default = []
 }
@@ -81,7 +81,7 @@ variable "deny" {
   description = "DENY 규칙 목록"
   type = list(object({
     protocol = string
-    ports    = list(string)
+    ports    = optional(list(string), [])
   }))
   default = []
 }
